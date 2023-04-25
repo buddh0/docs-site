@@ -67,6 +67,7 @@ Example on testnet
 ```
 tbnbcli staking bsc-create-validator \
 --side-cons-addr {validator address} \
+--side-vote-addr {validator vote pub key} \
 --side-fee-addr {wallet address on BSC} \
 --address-delegator {wallet address on BC} \
 --side-chain-id chapel \
@@ -187,7 +188,8 @@ Command for create validator on mainnet:
 
 ```
 bnbcli staking bsc-create-validator \
--side-cons-addr {validator address} \
+--side-cons-addr {validator address} \
+--side-vote-addr {validator vote pub key} \
 --side-fee-addr {wallet address on BSC} \
 --address-delegator {wallet address on BC} \
 --side-chain-id bsc \
